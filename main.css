@@ -1,0 +1,37 @@
+/* GENERAL ***********************************/
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* HEADING **************************************/
+
+header h1 {
+    float: center;
+}
+
+
+
+/* NAVIGATION ***********************************/
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display:inline-block;
+}
+
+nav a {
+    
+}
