@@ -1,37 +1,253 @@
-/* GENERAL ***********************************/
+/* WEB FONTS ***********************************/
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* BASE STYLES ***********************************/
+
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif; 
+    font: 1em/1.5 "Quicksand", Helvetica, Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
+div .float-right {
+    float: right;
+    position: fixed;
+    margin: auto;
+}
+
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+hr .header-line {
+}
+
+hr.header-line {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr.header-line:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+
+/* PSEUDO-SELECTORS **************************************/
+
+a:link {
+  color: lightgoldenrodyellow;
+  text-decoration: none;
+}
+
+a:visited {
+    color: #2D882D;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+    color: lightcoral;
+}
+
 
 
 /* HEADING **************************************/
 
-header h1 {
-    float: center;
-}
-
-
-
-/* NAVIGATION ***********************************/
-
-nav {
+header h1,
+header h2 {
     text-align: center;
+    color: #fff;
 }
 
-nav ul {
+header h1 {
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 9em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
+    margin: 12px 0 0;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header h2 {
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    padding-top: 170px;
+    height: 850px;
+    background: linear-gradient(#6ab47b, transparent 90%),                       linear-gradient(0deg, #fff, transparent ),
+                #2D882D url('../images/Machu Picchu.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+
+ 
+
+
+/* NAVIGATION ************************************/
+
+ul {
+    text-align: center;
     list-style: none;
+    padding: 50px;
+    margin: 50px;
 }
 
-nav li {
-    display:inline-block;
+li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 1.5em;
 }
 
-nav a {
+/*
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 50;
+    margin: 50;
+}
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+ 
+.nav a:hover {
+    background-color: #005f5f;
+}
+ 
+.nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+*/
+
+
     
+/* BODY ************************************/
+
+.body {
+    text-align: justify;
+    display: block;
+    margin: 10px 20%;
+    line-height: 1.6em;
+}
+    
+.body h1,
+.body h2 {
+    text-align: center;
+    line height: 2.5em;
+    margin-top: 10%;
+}
+
+.body p {
+    padding-bottom: 5%;
+}
+    
+.different,
+.history {
+    width: 46.5%;
+}
+
+.different {
+    float: left;
+}
+
+.history {
+    float: right;
+}
+
+
+    
+    
+/* FOOTER ************************************/
+
+
+footer {
+    font-size: 0.75em;
+	text-align: center;
+	clear: both;   
+	padding-top: 30px;
+	color: #ccc;
+    padding-bottom: 10px;
+    border-bottom: 10px solid #6ab47b;
+}
+    
+.social {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    margin: 0 5px;
 }
