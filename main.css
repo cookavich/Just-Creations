@@ -29,7 +29,6 @@ div .float-right {
     margin: auto;
 }
 
-
 hr.style-six {
     border: 0;
     height: 0;
@@ -67,27 +66,6 @@ hr.header-line:after {
 	-moz-transform: rotate(60deg);
 	transform: rotate(60deg);
 }
-
-
-/* PSEUDO-SELECTORS **************************************/
-
-a:link {
-  color: lightgoldenrodyellow;
-  text-decoration: none;
-}
-
-a:visited {
-    color: #2D882D;
-}
-
-a:hover {
-  color: rgba(255, 169, 73, .4);
-}
-
-a:active {
-    color: lightcoral;
-}
-
 
 
 /* HEADING **************************************/
@@ -136,6 +114,7 @@ ul {
     list-style: none;
     padding: 50px;
     margin: 50px;
+    text-decoration: none;
 }
 
 li {
@@ -143,7 +122,6 @@ li {
     margin-right: 10px;
     font-size: 1.5em;
 }
-
 
     
 /* BODY ************************************/
@@ -160,6 +138,13 @@ li {
     text-align: center;
     line height: 2.5em;
     margin-top: 10%;
+    color: #AA3939;
+}
+
+.body h3 {
+    line height: 2.5em;
+    margin-top: 10%;
+    color: #AA3939;
 }
 
 .body p {
@@ -193,28 +178,41 @@ footer {
 	color: #ccc;
     padding-bottom: 10px;
     border-bottom: 10px solid #6ab47b;
+    clear: both;
+    overflow: auto;
 }
-
-#footer-left {
-    text-align:left;
-    float:left;
- }
-
-#footer-center {
-    text-align: center;
-}
-
-#footer-right {
-    text-align: right;
-    float: right;
-}
-
 
 .social {
     width: 20px;
     height: 20px;
     margin: 0 5px;
     margin: 0 5px;
-    float: center;
 }
 
+
+hr.bottom-line { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+
+hr.bottom-line:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+/* ABOUT PAGE ************************************/
+
+img#ambassadorRight {
+    float: right; 
+    width: 55%;
+    margin: 5%;
+}
